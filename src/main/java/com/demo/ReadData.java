@@ -102,7 +102,6 @@ public class ReadData {
                                 cell.setCellValue(cellValue6);
                                 System.out.print(cellValue6 + "\t" + "  ");
 
-
                             }
                         }
                     }
@@ -110,6 +109,7 @@ public class ReadData {
 
             }
             workbook.write(fileOutputStream);
+            System.out.println("\n \n Successfully written to the data.xlsx file");
         } catch (Exception e) {// Catch exception if any
             System.err.println("Error: " + e.getMessage());
         }
